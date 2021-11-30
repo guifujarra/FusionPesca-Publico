@@ -1,0 +1,11 @@
+MongoDB:
+  host: '127.0.0.1'
+  porta: 27017
+  banco: 'bd'
+  usuario: 'root'
+  senha: '123456'
+Comandos:
+  - /pesca
+  - /pescar
+  - /pescaria
+  - /jurupinga

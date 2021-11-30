@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'br.fusion'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    compileJava.options.encoding = 'UTF-8'
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+
+
+dependencies  {
+    compileOnly files('libs/spigot.jar')
+    compileOnly files ('libs/vault.jar')
+    implementation ("org.mongodb:mongodb-driver-sync:4.2.2")
+}

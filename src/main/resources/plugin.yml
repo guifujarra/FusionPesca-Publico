@@ -1,0 +1,6 @@
+name: FusionPesca
+main: br.fusionpesca.Main
+version: 1.0
+commands:
+  pesca:
+    aliases: [pescaria, pescar]

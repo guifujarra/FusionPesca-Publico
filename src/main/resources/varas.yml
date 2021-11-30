@@ -1,0 +1,17 @@
+varas:
+  default:
+    nome: '&eVara padrão'
+    custo: 0.0
+    encantamentos: ''
+    lore:
+      - '&aUma vara de entrada'
+    raridade: COMUM
+  entrada:
+    nome: '&eVara profissional'
+    custo: 3000.0
+    encantamentos:
+      - LURE:1
+    lore:
+      - '&aVara de pesca profissional'
+    raridade: COMUM
+
